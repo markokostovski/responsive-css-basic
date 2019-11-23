@@ -1,3 +1,13 @@
+/**
+  Theme, used to define specific fonts, sizes and colors that
+
+  In ideal world (sass or css-in-js) this file would also export variables so that in components/pages you would never use any static value
+*/
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 a {
   color: white;
   text-decoration: none;

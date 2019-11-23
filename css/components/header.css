@@ -1,3 +1,10 @@
+/**
+  Header is being used almost on every page, 
+  
+  if you have header that is diffferent then this one,
+  you would preferably create another header file, and then you would have different names as well
+*/
+
 header {
   color: white;
   display: flex;

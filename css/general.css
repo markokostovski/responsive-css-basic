@@ -1,6 +1,9 @@
+/**
+  General rules, reset css, needed for every page
+*/
+
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
 }
 
 .container {
