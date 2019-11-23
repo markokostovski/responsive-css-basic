@@ -1,0 +1,13 @@
+.blue-background {
+  background-color: rgb(22, 82, 240);
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.homepage {
+  z-index: 100;
+  position: relative;
+}
