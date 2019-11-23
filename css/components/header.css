@@ -5,7 +5,7 @@
   you would preferably create another header file, and then you would have different names as well
 */
 
-header {
+.header {
   color: white;
   display: flex;
   justify-content: space-between;
@@ -16,26 +16,26 @@ header {
   /* Css rules */
 }
 
-header .logo {
+.header-logo {
   fill: white;
 }
 
-.left-nav {
+.header-left-nav {
   display: flex;
   align-items: center;
 }
 
-header a {
+.header a {
   margin: 15px;
 }
 
-.left-nav .promo {
+.header-promo {
   padding: 4px 6px;
   border-radius: 3px;
   background: rgb(5, 177, 105);
 }
 
-.right-nav .get-started {
+.header.get-started {
   border-radius: 4px;
   transition: all 80ms ease-in-out 0s;
   padding: 12px 16px;
