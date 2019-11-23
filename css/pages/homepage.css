@@ -10,5 +10,5 @@
 .homepage {
   min-height: 100vh;
   position: relative;
-  background: linear-gradient(180deg, #0000ff 400px, white 0%);
+  background: linear-gradient(180deg, rgb(22, 82, 240) 400px, white 0%);
 }

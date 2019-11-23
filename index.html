@@ -3,17 +3,21 @@
         <title>Coinbase</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/general.css">
+        
         <link rel="stylesheet" href="css/theme.css">
+        
         <link rel="stylesheet" href="css/pages/homepage.css">
+        
         <link rel="stylesheet" href="css/components/header.css">
+        <link rel="stylesheet" href="css/components/modal.css">
     </head>
     <body class="homepage">
         <header class="container header">
-            <div class="header-left-nav">
+            <div class="header-left">
                 <a href="index.html" class="header-logo">
                     <img src="images/logo.svg" alt="Logo">
                 </a>
-                <nav>
+                <nav class="header-left-nav">
                     <a href="#">Prices</a>
                     <a href="#">Product</a>
                     <a href="#">Company</a>
@@ -21,13 +25,45 @@
                     <a class="header-promo" href="#">Up to 130$</a>
                 </nav>
             </div>
-            <nav>
+            <nav class="header-right-nav">
                 <a href="#">Sign in</a>
                 <a class="header-get-started" href="#">Get started</a>
+                <a modal="open" class="header-mobile-nav" href="#">
+                    <div class="header-mobile-nav-line"></div>
+                </a>
             </nav>
         </header>
-        <div>
-            <h1 class="center">Buy and sell cryptocurrency</h1>
+        
+        <h1 class="center">Buy and sell cryptocurrency</h1>
+
+        <div class="modal">
+            <a modal="close" class="modal-close" href="#">Close me</a>
         </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+
+        <script>
+            // In normal projects I would not create css folder, but assets, and I would keep css in js files on the same level
+            // For this piece for code would go `/assets/components/moda/modal.js` but I feel it would be overkill for this project
+            // It a food for thought :D also to check how to use js properly!! 
+            $(document).ready(function() {
+                $('[modal]').on('click', function(){ 
+                    var modalValue = $(this).attr('modal');
+                    // if else is antipattern in many cases
+                    // I would like to keep my casses only in "open" and "close" any for other values it would not react
+                    
+                    if(modalValue === 'open'){
+                        $('.modal').addClass('modal-open');
+                    }
+
+                    if(modalValue === 'close'){
+                        $('.modal').removeClass('modal-open');
+                    }
+                })
+            });
+        </script>
     </body>
 </html>
