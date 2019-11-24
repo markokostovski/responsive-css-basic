@@ -11,7 +11,7 @@ For selectors, you should use element and class. When you name your class, it wo
 `compenent-header-logo` or
 `header-logo` for components
 Naming classes like that are pretty useful if you don't use module imports or css-in-js. In that way you would know class origin only from reading i it's name.
-You could take a look at `postcss` online (although I don't prefer it, maybe someone reading this would suit it's taste more)
+You could take a look at `BEM` online (although I don't prefer it, maybe someone reading this would suit it's taste more)
 
 Important! Use different attributes for js selectors if possible,
 `<a data-onclick="open-modal" href="#">Click me</a>` is `$('[data-onclick]')..` in jQuery, and would make your life easier over time since you would separate css in js selectors.
